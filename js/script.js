@@ -16,6 +16,7 @@ $(document).ready(function () {
     slidesToShow: 1,
     infinite: true,
     speed: 500,
+    autoplay: true,
   });
 });
 
@@ -33,8 +34,9 @@ $(document).ready(function () {
     arrows: false,
     slidesToShow: 3,
     infinite: true,
-    speed: 500,
+    speed: 700,
     dots: true,
     centerMode: true,
+    autoplay: true,
   });
 });

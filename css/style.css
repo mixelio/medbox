@@ -172,17 +172,29 @@ header {
 .social_link_1_appstore {
   background: url("../img/appstor.svg") 50% 50%/contain no-repeat;
 }
+.social_link_1_appstore:hover {
+  background: url("../img/appstor-hover.svg") 50% 50%/contain no-repeat;
+}
 
 .social_link_1_playmarket {
   background: url("../img/playmarket.svg") 50% 50%/contain no-repeat;
+}
+.social_link_1_playmarket:hover {
+  background: url("../img/playmarket-hover.svg") 50% 50%/contain no-repeat;
 }
 
 .social_link_1_twitter {
   background: url("../img/twitter.svg") 50% 50%/contain no-repeat;
 }
+.social_link_1_twitter:hover {
+  background: url("../img/twitter-hover.svg") 50% 50%/contain no-repeat;
+}
 
 .social_link_1_facebook {
   background: url("../img/facebook.svg") 50% 50%/contain no-repeat;
+}
+.social_link_1_facebook:hover {
+  background: url("../img/facebook-hover.svg") 50% 50%/contain no-repeat;
 }
 
 .services_futures__row {
@@ -201,6 +213,9 @@ header {
   font-size: 16px;
   line-height: 20px;
 }
+.services_futures__row a:hover {
+  color: #cc005e;
+}
 
 .leng__link {
   margin: 0 20px 0 0;
@@ -215,6 +230,9 @@ header {
 }
 .select_lang a {
   text-transform: uppercase;
+}
+.select_lang a:hover {
+  color: #cc005e;
 }
 .select_lang > li span {
   width: 0;
@@ -295,6 +313,9 @@ header {
   overflow: hidden;
 }
 
+.main_header__item {
+  height: 100%;
+}
 .main_header__item:nth-child(1) {
   padding: 20px 0 20px 30px;
 }
@@ -314,12 +335,37 @@ header {
   display: flex;
   justify-content: flex-end;
   padding: 0 38px 0 0;
+  position: relative;
 }
 .main_header__menu li {
-  margin-left: 30px;
+  margin-left: 25px;
 }
 .main_header__menu li:first-child {
   margin-left: 0;
+}
+.main_header__menu a:hover {
+  color: #cc005e;
+}
+.main_header__menu .main_header__search {
+  background: #fff;
+  padding: 0 15px;
+}
+.main_header__menu .main_header__search:hover .search__window {
+  width: 100%;
+}
+.main_header__menu .search__form {
+  position: absolute;
+  height: 100%;
+}
+.main_header__menu .search__form .search__window {
+  width: 1px;
+}
+.main_header__menu .main_header__sersh_submit {
+  position: absolute;
+  z-index: 1;
+  width: 16px;
+  height: 16px;
+  background: url("../img/search.svg") 50% 50%/100% no-repeat;
 }
 
 .main_header__button {
@@ -330,6 +376,7 @@ header {
   font-size: 16px;
   color: #fff;
   position: relative;
+  transition-duration: 400ms;
 }
 .main_header__button:before {
   content: "";
@@ -343,8 +390,61 @@ header {
   border: 7px solid #ffffff;
   border-radius: 50%;
 }
+.main_header__button:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 100%;
+  width: 29%;
+  right: 0;
+  border-radius: 10px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition-duration: 400ms;
+}
+.main_header__button:hover:after {
+  width: 87%;
+}
+.main_header__button:hover:before {
+  background: url("../img/download-hower.svg") 50% 50%/60% no-repeat, #130947;
+}
+
+.main_slider .slick-list {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+.main_slider .slick-track {
+  min-height: 700px;
+  display: -ms-flex;
+  display: flex;
+  position: relative;
+}
+.main_slider .slick-arrow {
+  position: absolute;
+  font-size: 0;
+  width: 50px;
+  height: 50px;
+  z-index: 3;
+  top: calc(35%);
+}
+.main_slider .slick-arrow.slick-prev {
+  right: calc(50% - 480px);
+  background: url("../img/arrow-back.svg") 50% 50%/contain no-repeat;
+}
+.main_slider .slick-arrow.slick-prev:hover {
+  background: url("../img/arrow-back-hover.svg") 50% 50%/contain no-repeat;
+}
+.main_slider .slick-arrow.slick-next {
+  right: calc(50% - 535px);
+  background: url("../img/arrow-next.svg") 50% 50%/contain no-repeat;
+}
+.main_slider .slick-arrow.slick-next:hover {
+  background: url("../img/arrow-next-hover.svg") 50% 50%/contain no-repeat;
+}
 
 .main_screen {
+  transform: translateY(-16%);
   width: 100%;
   top: 0;
   z-index: 0;
@@ -352,37 +452,14 @@ header {
 .main_screen .container {
   position: relative;
 }
-.main_screen .slick-list {
-  overflow: hidden;
-  width: 100%;
-  position: relative;
-}
-.main_screen .slick-track {
-  display: -ms-flex;
-  display: flex;
-}
-.main_screen .slick-arrow {
-  position: absolute;
-  font-size: 0;
-  width: 50px;
-  height: 50px;
-  z-index: 3;
-}
-.main_screen .slick-arrow.slick-prev {
-  top: calc(50% + 25px);
-  right: calc(50% - 480px);
-  background: url("../img/arrow-back.svg") 50% 50%/contain no-repeat;
-}
-.main_screen .slick-arrow.slick-next {
-  top: calc(50% + 25px);
-  right: calc(50% - 535px);
-  background: url("../img/arrow-next.svg") 50% 50%/contain no-repeat;
-}
 
 .main_slider__item {
   padding: 255px 0;
   width: 100%;
   background: url("../img/main.jpg") 50% 0%/cover no-repeat;
+}
+.main_slider__item .container {
+  top: 20px;
 }
 .main_slider__item h1 {
   margin-bottom: 10px;
@@ -408,7 +485,7 @@ header {
 }
 
 .main_slider__subitem {
-  flex: 1;
+  flex: 0 1 45%;
 }
 
 .main_slider__button {
@@ -421,6 +498,32 @@ header {
   font-weight: 800;
   font-size: 14px;
   line-height: 17px;
+  position: relative;
+}
+.main_slider__button:before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 100%;
+  width: 18%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition-duration: 400ms;
+}
+.main_slider__button:hover:before {
+  width: 87%;
+}
+.main_slider__button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -20%;
+  display: inline-block;
+  height: 100%;
+  width: 1px;
+  background-color: #fff;
 }
 
 .main_slider__approw {
@@ -438,7 +541,28 @@ header {
   display: inline-block;
   width: 100%;
   height: 100%;
-  background-color: #fff;
+}
+
+.main_slider__appstore {
+  background: url("../img/appstor.svg") 50% 50%/contain no-repeat;
+}
+.main_slider__appstore:hover {
+  background: url("../img/appstor-hover.svg") 50% 50%/contain no-repeat;
+}
+
+.main_slider__playmarket {
+  background: url("../img/playmarket.svg") 50% 50%/contain no-repeat;
+}
+.main_slider__playmarket:hover {
+  background: url("../img/playmarket-hover.svg") 50% 50%/contain no-repeat;
+}
+
+.benefits {
+  max-width: 1100px;
+  margin: 0 auto;
+  transform: translateY(-34%);
+  padding: 0 0 65px;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .benefits_slider {
@@ -462,6 +586,7 @@ header {
 .benefits_slider img {
   margin: 0 0 16px;
   width: 100%;
+  border-radius: 10px;
 }
 .benefits_slider p {
   font-weight: 800;
@@ -469,9 +594,35 @@ header {
   line-height: 24px;
   color: #130947;
 }
+.benefits_slider .slick-arrow {
+  position: absolute;
+  font-size: 0;
+  width: 50px;
+  height: 50px;
+  z-index: 3;
+  top: calc(33%);
+}
+.benefits_slider .slick-arrow.slick-prev {
+  left: calc(-55px);
+  background: url("../img/arrow-1-back.svg") 50% 50%/contain no-repeat;
+}
+.benefits_slider .slick-arrow.slick-prev:hover {
+  background: url("../img/arrow-back-hover.svg") 50% 50%/contain no-repeat;
+}
+.benefits_slider .slick-arrow.slick-next {
+  right: calc(50% - 605px);
+  background: url("../img/arrow-1-next.svg") 50% 50%/contain no-repeat;
+}
+.benefits_slider .slick-arrow.slick-next:hover {
+  background: url("../img/arrow-next-hover.svg") 50% 50%/contain no-repeat;
+}
 
 .benefits_slider_item {
   margin: 0 15px;
+}
+
+.partner {
+  margin: -290px 0 0;
 }
 
 .partner__row {
@@ -623,7 +774,14 @@ header {
   line-height: 20px;
   color: #130947;
   text-align: center;
-  background: #f9fbfb;
+  background: #ffffff;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 50%, #f9fbfb 51%, #f9fbfb 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffffff", endColorstr="#f9fbfb",GradientType=0 );
+  /* IE6-9 */
 }
 
 .function__title {
@@ -697,6 +855,21 @@ header {
   border-radius: 50%;
   background: url("../img/appstor-hover.svg") 50% 50%/60% no-repeat, #fff;
 }
+.function__appstore:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 100%;
+  width: 10%;
+  right: 0;
+  border-radius: 3px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition-duration: 400ms;
+}
+.function__appstore:hover:after {
+  width: 73%;
+}
 
 .function__playmarket {
   display: block;
@@ -716,6 +889,21 @@ header {
   height: 30px;
   border-radius: 50%;
   background: url("../img/playmarket-hover.svg") 65% 50%/60% no-repeat, #fff;
+}
+.function__playmarket:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 100%;
+  width: 10%;
+  right: 0;
+  border-radius: 3px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition-duration: 400ms;
+}
+.function__playmarket:hover:after {
+  width: 73%;
 }
 
 .function__row_2 {
@@ -1003,6 +1191,9 @@ header {
   font-size: 12px;
   line-height: 15px;
   color: #8d8c8c;
+}
+.footer__row a:hover {
+  text-decoration: underline;
 }
 .footer__row ul:last-child {
   margin-bottom: 15px;
