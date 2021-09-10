@@ -351,6 +351,17 @@ header {
   opacity: 1;
   visibility: visible;
 }
+.burger__menu .burger_search__form {
+  position: relative;
+}
+.burger__menu .burger_search__form .search__window {
+  width: 100%;
+}
+.burger__menu .burger__sersh_submit {
+  width: 16px;
+  height: 16px;
+  background: url("../img/search.svg") 50% 50%/100% no-repeat;
+}
 
 .main_header__navigation {
   font-weight: 600;
@@ -1463,7 +1474,6 @@ header {
 
   .main_slider .slick-arrow.slick-next {
     right: calc(50% - 455px);
-    background: url("../img/arrow-next.svg") 50% 50%/contain no-repeat;
   }
 }
 @media (max-width: 1000px) {
@@ -1480,7 +1490,7 @@ header {
   }
 
   .search__form {
-    top: -7px;
+    display: none;
   }
 }
 @media (max-width: 800px) {
@@ -1497,6 +1507,228 @@ header {
 
   .main_slider .slick-arrow.slick-next {
     right: calc(50% - 355px);
-    background: url("../img/arrow-next.svg") 50% 50%/contain no-repeat;
+  }
+
+  .partner {
+    margin: -230px 0 0;
+  }
+
+  .about_app {
+    padding: 111px 0 10px;
+  }
+
+  .about_app__info {
+    width: 70%;
+  }
+}
+@media (max-width: 700px) {
+  .main_screen {
+    transform: translateY(-18%);
+  }
+
+  .main_slider .slick-arrow.slick-prev {
+    right: calc(50% - 200px);
+  }
+
+  .main_slider .slick-arrow.slick-next {
+    right: calc(50% - 255px);
+  }
+
+  .benefits_slider_item:after {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    bottom: 30px;
+    right: 5px;
+  }
+
+  .partner__row {
+    flex-wrap: wrap;
+  }
+
+  .function__apps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__row {
+    flex-wrap: wrap;
+  }
+
+  .footer__item {
+    margin: 0 5px 15px;
+  }
+}
+@media (max-width: 640px) {
+  .services__mail {
+    display: none;
+  }
+
+  .benefits_slider_item:after {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    bottom: auto;
+    top: 2px;
+    right: 2px;
+  }
+}
+@media (max-width: 600px) {
+  .function__row_2 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .function__item_2::before {
+    top: -6px;
+    left: calc(50% - 4px);
+  }
+
+  .function__item_2::before {
+    top: -6px;
+    left: calc(50% - 4px);
+  }
+
+  .function__item_2::before {
+    top: -10px;
+    left: calc(50% - 4px);
+  }
+
+  .function__item_2 {
+    margin: 0 0 20px 0;
+    padding: 0 10px;
+    flex: 1 1 100%;
+  }
+
+  .footer_contact__row {
+    flex-direction: column;
+    padding: 60px 0 40px;
+  }
+  .footer_contact__row .footer_contact__item {
+    margin: 0 0 30px;
+  }
+  .footer_contact__row .footer_contact__item:last-child {
+    margin: 0;
+  }
+}
+@media (max-width: 500px) {
+  .social_link_1_item {
+    margin-right: 10px;
+  }
+
+  .social_link_1_row {
+    flex-wrap: wrap;
+  }
+
+  .select_lang {
+    margin: 0 15px 0 0;
+  }
+
+  .registration {
+    margin: 0 0 0 10px;
+  }
+
+  .main_header__button {
+    font-size: 0;
+  }
+  .main_header__button:hover:after {
+    width: 50%;
+  }
+
+  .main_slider .slick-arrow {
+    top: 55%;
+  }
+
+  .main_slider .slick-arrow.slick-prev {
+    right: calc(50% + 50px);
+  }
+
+  .main_slider .slick-arrow.slick-next {
+    right: calc(50% - 100px);
+  }
+
+  .benefits_slider_item:after {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    bottom: 30px;
+    right: 5px;
+  }
+
+  .about_app__info {
+    width: 90%;
+  }
+
+  .video_container .play {
+    top: calc(50% - 35px);
+    left: calc(50% - 35px);
+    width: 70px;
+    height: 70px;
+  }
+  .video_container .play:before {
+    top: -35px;
+    left: -35px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    transition-duration: 500ms;
+  }
+  .video_container .play:after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: -70px;
+    left: -70px;
+    width: 210px;
+    height: 210px;
+  }
+
+  .comment {
+    padding: 50px 0;
+  }
+
+  .footer__row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 400px) {
+  .social_link_1_item {
+    margin-right: 5px;
+  }
+
+  .registration li {
+    padding: 0 5px;
+  }
+
+  .main_slider .slick-arrow {
+    top: 47%;
+  }
+
+  .benefits_slider_item:after {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    bottom: 35px;
+    right: 35px;
+    top: auto;
+  }
+
+  .partner {
+    margin: -320px 0 0;
+  }
+
+  .about_app__info .item_box::before {
+    top: calc(50% - 175px);
+    height: 350px;
+  }
+
+  .try {
+    padding: 90px 0 90px;
+    background: url("../img/people.jpg") 50% 50%/cover no-repeat;
+    max-width: 1100px;
+    margin: 0 auto 62px;
   }
 }

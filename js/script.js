@@ -21,6 +21,12 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
+  const mediaQuery = window.matchMedia("(max-width: 400px)");
+  if (mediaQuery.matches) {
+    $(".benefits_slider").slick({
+      slidesToShow: 1,
+    });
+  }
   $(".benefits_slider").slick({
     arrows: true,
     slidesToShow: 3,
@@ -32,13 +38,13 @@ $(document).ready(function () {
 $(document).ready(function () {
   const mediaQuery = window.matchMedia("(max-width: 800px)");
   if (mediaQuery.matches) {
-    $(".comment__slider").slick({
+    $(".comment_slider").slick({
       arrows: false,
       slidesToShow: 1,
       infinite: true,
       speed: 700,
       dots: true,
-      centerMode: false,
+      centerMode: true,
       autoplay: true,
     });
   }
