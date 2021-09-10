@@ -11,6 +11,15 @@
   <body>
     <header>
       <div class="container">
+        <nav class="burger__menu">
+          <ul>
+            <li><a href="">Doctors&Institutions</a></li>
+            <li><a href="">Clinics&Professionals</a></li>
+            <li><a href="">Security</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">About Us</a></li>
+          </ul>
+        </nav>
         <div class="services__row">
           <div class="serveces__item social_link_1">
             <ul class="social_link_1_row">
@@ -70,19 +79,23 @@
                 <li><a href="">Security</a></li>
                 <li><a href="">Blog</a></li>
                 <li><a href="">About Us</a></li>
-                <li class="search__form">
-                  <form action="" class="main_header__search">
-                    <input type="text" class="search__window" />
-                    <input
-                      type="submit"
-                      name=""
-                      value=""
-                      class="main_header__sersh_submit"
-                    />
-                  </form>
-                </li>
               </ul>
             </nav>
+
+            <div class="menu__icon">
+              <span></span>
+            </div>
+            <div class="search__form">
+              <form action="" class="main_header__search">
+                <input type="text" class="search__window" />
+                <input
+                  type="submit"
+                  name=""
+                  value=""
+                  class="main_header__sersh_submit"
+                />
+              </form>
+            </div>
           </div>
           <div class="main_header__item">
             <button class="main_header__button">DOWNLOAD APP</button>
@@ -144,22 +157,22 @@
         </div>
         <div class="benefits">
           <div class="benefits_slider">
-            <div class="benefits_slider_item">
+            <div class="benefits_slider_item benefits_slider_item_1">
               <img src="./img/slider-img-1.jpg" alt="" class="slide_imag_1" />
               <h3>ANY DEVICE</h3>
               <p>Lorem ipsum dolor</p>
             </div>
-            <div class="benefits_slider_item">
+            <div class="benefits_slider_item benefits_slider_item_2">
               <img src="./img/slider-img-2.jpg" alt="" class="slide_imag_2" />
               <h3>FAST LOG IN</h3>
               <p>Lorem ipsum dolor</p>
             </div>
-            <div class="benefits_slider_item">
+            <div class="benefits_slider_item benefits_slider_item_3">
               <img src="./img/slider-img-3.jpg" alt="" class="slide_imag_3" />
               <h3>ALWAYS ONLINE</h3>
               <p>Lorem ipsum dolor</p>
             </div>
-            <div class="benefits_slider_item">
+            <div class="benefits_slider_item benefits_slider_item_1">
               <img src="./img/slider-img-1.jpg" alt="" class="slide_imag_1" />
               <h3>ANY DEVICE</h3>
               <p>Lorem ipsum dolor</p>
@@ -242,9 +255,12 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod.
           </p>
-          <video class="function__video">
-            <source src="videoplayback.mp4" type="video/mp4" />
-          </video>
+          <div class="video_container">
+            <video class="function__video" muted preload="auto">
+              <source src="img/videoplayback.mp4" type="video/mp4" />
+            </video>
+            <span class="play"></span>
+          </div>
           <h3 class="function__subtitle subtitle">
             The Functionality of the App
           </h3>
