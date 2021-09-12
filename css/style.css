@@ -393,7 +393,7 @@ header {
   left: 40px;
   top: -13px;
   width: 30px;
-  height: 25px;
+  height: 24px;
   cursor: pointer;
 }
 .menu__icon span, .menu__icon::before, .menu__icon::after {
@@ -1476,8 +1476,8 @@ header {
     display: block;
   }
 
-  .search__form {
-    top: -10px;
+  .main_header__search {
+    top: -6px;
   }
 }
 @media (max-width: 800px) {

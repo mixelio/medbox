@@ -293,7 +293,7 @@ header {
   top: -13px;
   //transform: translate(-30px, 50px);
   width: 30px;
-  height: 25px;
+  height: 24px;
   cursor: pointer;
   span,
   &::before,
@@ -1469,8 +1469,8 @@ header {
   .burger__menu {
     display: block;
   }
-  .search__form {
-    top: -10px;
+  .main_header__search {
+    top: -6px;
   }
 }
 
