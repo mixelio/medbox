@@ -360,7 +360,6 @@ header {
     display: inline-block;
     height: 100%;
     width: 20px;
-    //background-color: rgba(#fff, 0);
   }
   .search__window {
     position: absolute;
@@ -368,33 +367,30 @@ header {
     right: 15px;
     transition-duration: 500ms;
     width: 0px;
-    //height: 30px;
+
     padding-left: 10px;
-    //transform: translateX(95%);
+
     border-left: 1px solid #bbbbbb;
     &:focus {
       width: 250px;
       padding-left: 10px;
-      //transform: translateX(0%);
     }
   }
 
   &:hover {
     width: 244px;
-    //transform: translateX(0);
+
     .search__window {
       width: 250px;
       padding-left: 10px;
-      //transform: translateX(0%);
     }
   }
   &:focus {
     width: 244px;
-    //transform: translateX(0);
+
     .search__window {
       width: 250px;
       padding-left: 10px;
-      //transform: translateX(0%);
     }
   }
   .main_header__sersh_submit {
@@ -529,20 +525,9 @@ header {
   font-size: 14px;
   line-height: 17px;
   position: relative;
-  &:before {
-    content: "";
-    position: absolute;
-    display: inline-block;
-    height: 100%;
-    width: 18%;
-    left: 0;
-    top: 0;
-    z-index: 1;
-    background-color: rgba(#000, 0.1);
-    transition-duration: 400ms;
-  }
-  &:hover:before {
-    width: 87%;
+  transition-duration: 500ms;
+  &:hover {
+    background-color: #ad0050;
   }
   &:after {
     content: "";
@@ -973,6 +958,7 @@ header {
   background: #cc005e;
   border-radius: 3px;
   position: relative;
+  transition-duration: 500ms;
   &:before {
     content: "";
     position: absolute;
@@ -984,20 +970,9 @@ header {
     border-radius: 50%;
     background: url("../img/appstor-hover.svg") 50% 50% / 60% no-repeat, #fff;
   }
-  &:after {
-    content: "";
-    position: absolute;
-    display: inline-block;
-    height: 100%;
-    width: 10%;
-    right: 0;
-    border-radius: 3px;
-    z-index: 1;
-    background-color: rgba(#000, 0.1);
-    transition-duration: 400ms;
-  }
-  &:hover:after {
-    width: 73%;
+
+  &:hover {
+    background-color: #ad0050;
   }
 }
 
@@ -1008,6 +983,7 @@ header {
   background: #cc005e;
   border-radius: 3px;
   position: relative;
+  transition-duration: 500ms;
   &:before {
     content: "";
     position: absolute;
@@ -1019,20 +995,9 @@ header {
     border-radius: 50%;
     background: url("../img/playmarket-hover.svg") 65% 50% / 60% no-repeat, #fff;
   }
-  &:after {
-    content: "";
-    position: absolute;
-    display: inline-block;
-    height: 100%;
-    width: 10%;
-    right: 0;
-    border-radius: 3px;
-    z-index: 1;
-    background-color: rgba(#000, 0.1);
-    transition-duration: 400ms;
-  }
-  &:hover:after {
-    width: 73%;
+
+  &:hover {
+    background-color: #ad0050;
   }
 }
 
@@ -1215,6 +1180,7 @@ header {
   color: #cc005e;
   text-transform: uppercase;
   position: relative;
+  transition-duration: 500ms;
   &:before {
     content: "";
     position: absolute;
@@ -1535,28 +1501,14 @@ header {
 
 @media (max-width: 700px) {
   .main_header__button {
-    background-color: #cc005e;
-    line-height: 70px;
-    padding: 0 20px 0 38px;
-    font-weight: bold;
-    font-size: 0px;
-    color: #fff;
-    position: relative;
-    transition-duration: 400ms;
+    padding: 0 40px;
+    font-size: 0;
     &:before {
       content: "";
       position: absolute;
       display: inline-block;
       top: calc(50% - 22.5px);
       left: calc(50% - 22.5px);
-      height: 45px;
-      width: 45px;
-      background: url("../img/download.svg") 50% 50% / 60% no-repeat, #130947;
-      border: 7px solid #ffffff;
-      border-radius: 50%;
-    }
-    &:hover {
-      background-color: #ad0050;
     }
   }
   .main_screen {
@@ -1676,6 +1628,7 @@ header {
   }
 
   .main_header__button {
+    padding: 0 40px;
     font-size: 0;
     &:hover:after {
       width: 50%;

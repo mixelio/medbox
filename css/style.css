@@ -606,21 +606,10 @@ header {
   font-size: 14px;
   line-height: 17px;
   position: relative;
+  transition-duration: 500ms;
 }
-.main_slider__button:before {
-  content: "";
-  position: absolute;
-  display: inline-block;
-  height: 100%;
-  width: 18%;
-  left: 0;
-  top: 0;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.1);
-  transition-duration: 400ms;
-}
-.main_slider__button:hover:before {
-  width: 87%;
+.main_slider__button:hover {
+  background-color: #ad0050;
 }
 .main_slider__button:after {
   content: "";
@@ -1010,6 +999,7 @@ header {
   background: #cc005e;
   border-radius: 3px;
   position: relative;
+  transition-duration: 500ms;
 }
 .function__appstore:before {
   content: "";
@@ -1022,20 +1012,8 @@ header {
   border-radius: 50%;
   background: url("../img/appstor-hover.svg") 50% 50%/60% no-repeat, #fff;
 }
-.function__appstore:after {
-  content: "";
-  position: absolute;
-  display: inline-block;
-  height: 100%;
-  width: 10%;
-  right: 0;
-  border-radius: 3px;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.1);
-  transition-duration: 400ms;
-}
-.function__appstore:hover:after {
-  width: 73%;
+.function__appstore:hover {
+  background-color: #ad0050;
 }
 
 .function__playmarket {
@@ -1045,6 +1023,7 @@ header {
   background: #cc005e;
   border-radius: 3px;
   position: relative;
+  transition-duration: 500ms;
 }
 .function__playmarket:before {
   content: "";
@@ -1057,20 +1036,8 @@ header {
   border-radius: 50%;
   background: url("../img/playmarket-hover.svg") 65% 50%/60% no-repeat, #fff;
 }
-.function__playmarket:after {
-  content: "";
-  position: absolute;
-  display: inline-block;
-  height: 100%;
-  width: 10%;
-  right: 0;
-  border-radius: 3px;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.1);
-  transition-duration: 400ms;
-}
-.function__playmarket:hover:after {
-  width: 73%;
+.function__playmarket:hover {
+  background-color: #ad0050;
 }
 
 .function__row_2 {
@@ -1239,6 +1206,7 @@ header {
   color: #cc005e;
   text-transform: uppercase;
   position: relative;
+  transition-duration: 500ms;
 }
 .try__appstore:before {
   content: "";
@@ -1538,14 +1506,8 @@ header {
 }
 @media (max-width: 700px) {
   .main_header__button {
-    background-color: #cc005e;
-    line-height: 70px;
-    padding: 0 20px 0 38px;
-    font-weight: bold;
-    font-size: 0px;
-    color: #fff;
-    position: relative;
-    transition-duration: 400ms;
+    padding: 0 40px;
+    font-size: 0;
   }
   .main_header__button:before {
     content: "";
@@ -1553,14 +1515,6 @@ header {
     display: inline-block;
     top: calc(50% - 22.5px);
     left: calc(50% - 22.5px);
-    height: 45px;
-    width: 45px;
-    background: url("../img/download.svg") 50% 50%/60% no-repeat, #130947;
-    border: 7px solid #ffffff;
-    border-radius: 50%;
-  }
-  .main_header__button:hover {
-    background-color: #ad0050;
   }
 
   .main_screen {
@@ -1680,6 +1634,7 @@ header {
   }
 
   .main_header__button {
+    padding: 0 40px;
     font-size: 0;
   }
   .main_header__button:hover:after {
