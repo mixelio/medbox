@@ -559,7 +559,7 @@ header {
 .main_slider__item {
   padding: 255px 0;
   width: 100%;
-  background: url("../img/main.jpg") 50% 0%/cover no-repeat;
+  background: url("../img/main.webp") 50% 0%/cover no-repeat;
 }
 .main_slider__item .container {
   top: 20px;
@@ -1200,7 +1200,7 @@ header {
 
 .try {
   padding: 90px 0 90px 50px;
-  background: url("../img/people.jpg") 50% 50%/cover no-repeat;
+  background: url("../img/people.webp") 50% 50%/cover no-repeat;
   max-width: 1100px;
   margin: 0 auto 62px;
 }
@@ -1714,7 +1714,7 @@ header {
 
   .try {
     padding: 90px 0 90px;
-    background: url("../img/people.jpg") 50% 50%/cover no-repeat;
+    background: url("../img/people.webp") 50% 50%/cover no-repeat;
     max-width: 1100px;
     margin: 0 auto 62px;
   }
