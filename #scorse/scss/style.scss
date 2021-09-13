@@ -243,17 +243,24 @@ header {
       }
     }
   }
-
-  .burger_search__form {
+  .burger__menu__search {
+    display: none;
     position: relative;
-    .search__window {
-      width: 100%;
-    }
+    padding: 5px 10px;
+    border: 1px solid #000;
   }
-  .burger__sersh_submit {
+
+  .search__window {
+  }
+
+  .burger__menu__sersh_submit {
+    position: absolute;
+    right: 10px;
+    top: calc(50% - 8px);
+    display: inline-block;
     width: 16px;
     height: 16px;
-    background: url("../img/search.svg") 50% 50% / 100% no-repeat;
+    background: url("../img/search.svg") 50% 50% / 100% no-repeat, #fff;
   }
 }
 
@@ -1472,6 +1479,12 @@ header {
   .main_header__search {
     top: -7px;
   }
+  .main_slider .slick-arrow.slick-prev {
+    right: calc(50% - 340px);
+  }
+  .main_slider .slick-arrow.slick-next {
+    right: calc(50% - 395px);
+  }
 }
 
 @media (max-width: 800px) {
@@ -1496,9 +1509,56 @@ header {
   .about_app__info {
     width: 70%;
   }
+  .main_header__search {
+    .search__window {
+      &:focus {
+        width: 170px;
+      }
+    }
+
+    &:hover {
+      width: 170px;
+
+      .search__window {
+        width: 170px;
+      }
+    }
+    &:focus {
+      width: 170px;
+
+      .search__window {
+        width: 170px;
+      }
+    }
+  }
 }
 
 @media (max-width: 700px) {
+  .main_header__button {
+    background-color: #cc005e;
+    line-height: 70px;
+    padding: 0 20px 0 38px;
+    font-weight: bold;
+    font-size: 0px;
+    color: #fff;
+    position: relative;
+    transition-duration: 400ms;
+    &:before {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      top: calc(50% - 22.5px);
+      left: calc(50% - 22.5px);
+      height: 45px;
+      width: 45px;
+      background: url("../img/download.svg") 50% 50% / 60% no-repeat, #130947;
+      border: 7px solid #ffffff;
+      border-radius: 50%;
+    }
+    &:hover {
+      background-color: #ad0050;
+    }
+  }
   .main_screen {
     transform: translateY(-18%);
   }
@@ -1584,6 +1644,23 @@ header {
 }
 
 @media (max-width: 500px) {
+  .burger__menu {
+    ul {
+      li {
+        &:last-child {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .burger__menu__search {
+      display: block;
+    }
+    .burger__menu__sersh_submit {
+    }
+  }
+  .main_header__search {
+    display: none;
+  }
   .social_link_1_item {
     margin-right: 10px;
   }
@@ -1648,6 +1725,22 @@ header {
         left: -70px;
         width: 210px;
         height: 210px;
+      }
+      &:hover {
+        cursor: pointer;
+
+        &:before {
+          top: -45px;
+          left: -45px;
+          width: 160px;
+          height: 160px;
+        }
+        &:after {
+          top: -47.5px;
+          left: -47.5px;
+          width: 165px;
+          height: 165px;
+        }
       }
     }
   }
