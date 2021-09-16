@@ -1,0 +1,87 @@
+.try {
+  padding: 90px 0 90px 50px;
+  background: url("../img/people.webp") 50% 50%/cover no-repeat;
+  max-width: 1100px;
+  margin: 0 auto 62px;
+}
+
+.try__title {
+  margin: 0 0 18px;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 43px;
+  color: #ffffff;
+}
+
+.try__text {
+  margin-bottom: 34px;
+  max-width: 550px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.try__appstore {
+  margin-right: 20px;
+  display: inline-block;
+  width: 160px;
+  height: 45px;
+  background: #fff;
+  border-radius: 3px;
+  padding: 0 10px 0 50px;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 45px;
+  color: #cc005e;
+  text-transform: uppercase;
+  position: relative;
+  transition-duration: 500ms;
+}
+.try__appstore:before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 15px);
+  left: 10px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: url("../img/appstor.svg") 50% 50%/60% no-repeat, #cc005e;
+}
+.try__appstore:last-child {
+  margin-right: 0;
+}
+.try__appstore:hover {
+  color: #fff;
+  background: #cc005e;
+}
+
+.try__playmarket {
+  display: inline-block;
+  width: 160px;
+  height: 45px;
+  background: #fff;
+  border-radius: 3px;
+  padding: 0 10px 0 50px;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 45px;
+  color: #cc005e;
+  text-transform: uppercase;
+  position: relative;
+}
+.try__playmarket:before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 15px);
+  left: 10px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: url("../img/playmarket.svg") 65% 50%/60% no-repeat, #cc005e;
+}
+.try__playmarket:hover {
+  color: #fff;
+  background: #cc005e;
+}

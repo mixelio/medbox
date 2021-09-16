@@ -60,6 +60,17 @@ $(document).ready(function () {
   });
 });
 
+$(document).ready(function () {
+  $(".main_content__slider").slick({
+    arrows: true,
+    rows: 4,
+    slidesToShow: 8,
+    infinite: true,
+    speed: 500,
+    autoplay: true,
+  });
+});
+
 const play = document.querySelector(".play");
 const video = document.querySelector(".function__video");
 const playActive = document.querySelector("._playActive");
