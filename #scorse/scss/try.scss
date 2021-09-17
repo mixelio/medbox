@@ -69,6 +69,7 @@
   color: #cc005e;
   text-transform: uppercase;
   position: relative;
+  transition-duration: 500ms;
   &:before {
     content: "";
     position: absolute;
@@ -95,6 +96,6 @@
   }
   .try__appstore {
     margin-right: 0px;
-    margin: 0 0 20px;
+    margin: 0 5px 20px;
   }
 }

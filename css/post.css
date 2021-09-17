@@ -199,10 +199,12 @@ header {
   color: #fff;
 }
 .services_futures__row a {
+  transition-duration: 500ms;
   color: #fff;
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
+  text-transform: capitalize;
 }
 .services_futures__row a:hover {
   color: #cc005e;
@@ -220,6 +222,7 @@ header {
   transform: rotateX(180deg);
 }
 .select_lang a {
+  transition-duration: 500ms;
   text-transform: uppercase;
 }
 .select_lang a:hover {
@@ -317,20 +320,21 @@ header {
 
 .burger__menu {
   display: none;
-  padding: 15px;
+  padding: 35px 15px 15px;
   position: absolute;
   left: 10px;
-  top: 20px;
+  top: 10px;
   width: calc(100% - 21px);
   height: auto;
   z-index: 3;
   background: #fff;
   transition-duration: 500ms;
   transform: scaleY(0);
+  border-radius: 0 0 10px 10px;
 }
 .burger__menu._active {
   transform: scaleY(1);
-  top: 142px;
+  top: 132px;
 }
 .burger__menu ul {
   text-align: left;
@@ -342,21 +346,25 @@ header {
   margin-bottom: 0;
 }
 .burger__menu ul li a {
-  font-size: 20px;
+  color: #130947;
+  font-size: 18px;
 }
 .burger__menu .burger__menu__search {
   display: none;
   position: relative;
-  padding: 5px 10px;
-  border: 1px solid #000;
+  padding: 5px 28px;
+}
+.burger__menu .search__window {
+  font-size: 18px;
 }
 .burger__menu .burger__menu__sersh_submit {
   position: absolute;
-  right: 10px;
-  top: calc(50% - 8px);
+  right: auto;
+  left: 0;
+  top: calc(50% - 9px);
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   background: url("../img/search.svg") 50% 50%/100% no-repeat, #fff;
 }
 
@@ -605,22 +613,35 @@ header {
   }
 }
 @media (max-width: 400px) {
+  .social_link_1_item {
+    margin-right: 5px;
+  }
+
   .lang_sub {
     left: 0;
-    top: 22px;
+    top: 16px;
   }
   .lang_sub a {
     font-size: 13px;
   }
 
-  .social_link_1_item {
-    flex: 0 1 40%;
-    margin-right: 0;
-    margin: 0 0 3px;
+  .registration:before {
+    padding: 10px;
+    width: 25px;
+    height: 25px;
   }
 
   .registration li {
-    padding: 0 5px;
+    padding: 0 2px;
+  }
+
+  .burger__menu {
+    padding: 25px 15px 15px;
+    top: -20px;
+  }
+  .burger__menu._active {
+    transform: scaleY(1);
+    top: 126px;
   }
 }
 .footer {
@@ -799,6 +820,18 @@ header {
   .footer_contact__row .footer_contact__item:last-child {
     margin: 0;
   }
+
+  .footer__approw {
+    justify-content: space-around;
+  }
+
+  .footer__appitem {
+    flex: 0 1 47%;
+    margin-right: 0;
+  }
+  .footer__appitem img {
+    width: 100%;
+  }
 }
 @media (max-width: 500px) {
   .footer__row {
@@ -878,6 +911,7 @@ header {
   color: #cc005e;
   text-transform: uppercase;
   position: relative;
+  transition-duration: 500ms;
 }
 .try__playmarket:before {
   content: "";
@@ -904,7 +938,7 @@ header {
 
   .try__appstore {
     margin-right: 0px;
-    margin: 0 0 20px;
+    margin: 0 5px 20px;
   }
 }
 .main_content__row {

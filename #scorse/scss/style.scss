@@ -369,6 +369,10 @@ body {
   color: #130947;
 }
 
+.about_app__title_column {
+  display: none;
+}
+
 .about_app__subtitle {
   margin: 0 0 20px;
   font-weight: bold;
@@ -757,6 +761,9 @@ body {
     align-items: center;
     flex-direction: column;
   }
+  .about_app__image {
+    padding: 20px 0;
+  }
   .main_slider .slick-arrow.slick-prev {
     right: calc(50% - 300px);
   }
@@ -767,10 +774,16 @@ body {
     margin: -230px 0 0;
   }
   .about_app {
-    padding: 111px 0 10px;
+    padding: 50px 0 10px;
   }
   .about_app__info {
     width: 70%;
+  }
+  .about_app__title_column {
+    display: block;
+  }
+  .about_app__title {
+    display: none;
   }
 }
 
@@ -818,28 +831,18 @@ body {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 620px) {
   .function__row_2 {
     flex-direction: column;
-    text-align: center;
-  }
-  .function__item_2::before {
-    top: -6px;
-    left: calc(50% - 4px);
-  }
-  .function__item_2::before {
-    top: -6px;
-    left: calc(50% - 4px);
-  }
-  .function__item_2::before {
-    top: -10px;
-    left: calc(50% - 4px);
+    flex-wrap: nowrap;
+    text-align: left;
   }
   .function__item_2 {
     margin: 0 0 20px 0;
-    padding: 0 10px;
-    flex: 1 1 100%;
   }
+}
+
+@media (max-width: 600px) {
 }
 
 @media (max-width: 500px) {
@@ -912,6 +915,48 @@ body {
 }
 
 @media (max-width: 400px) {
+  .video_container {
+    .play {
+      top: calc(50% - 35px);
+      left: calc(50% - 35px);
+      width: 70px;
+      height: 70px;
+      &:before {
+        top: -25px;
+        left: -25px;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        transition-duration: 500ms;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        top: -40px;
+        left: -40px;
+        width: 150px;
+        height: 150px;
+      }
+      &:hover {
+        cursor: pointer;
+
+        &:before {
+          top: -30px;
+          left: -30px;
+          width: 130px;
+          height: 130px;
+        }
+        &:after {
+          top: -32.5px;
+          left: -32.5px;
+          width: 135px;
+          height: 135px;
+        }
+      }
+    }
+  }
   .main_slider .slick-arrow {
     top: 47%;
   }
@@ -940,14 +985,18 @@ body {
   .function__row_1 {
     flex-direction: column;
   }
+
   .function__info {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .function__apps {
     flex-direction: row;
     align-items: center;
     width: 100%;
+    a {
+      margin: 0 5px;
+    }
   }
   .about_app__info {
     width: 100%;

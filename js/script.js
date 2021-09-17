@@ -11,6 +11,13 @@ if (langArrow) {
 }
 
 $(document).ready(function () {
+  const mediaQuery = window.matchMedia("(max-width: 600px)");
+  if (mediaQuery.matches) {
+    $(".main_slider").slick({
+      arrows: false,
+    });
+  }
+
   $(".main_slider").slick({
     arrows: true,
     slidesToShow: 1,

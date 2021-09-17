@@ -192,6 +192,16 @@
       }
     }
   }
+  .footer__approw {
+    justify-content: space-around;
+  }
+  .footer__appitem {
+    flex: 0 1 47%;
+    margin-right: 0;
+    img {
+      width: 100%;
+    }
+  }
 }
 
 @media (max-width: 500px) {
