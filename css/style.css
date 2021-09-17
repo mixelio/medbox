@@ -494,6 +494,7 @@ header {
 }
 
 .main_header__button {
+  display: block;
   background-color: #cc005e;
   line-height: 70px;
   padding: 0 20px 0 38px;
@@ -539,23 +540,21 @@ header {
 
   .main_header__search {
     top: -7px;
+    width: 244px;
+  }
+  .main_header__search .search__window {
+    width: 250px;
+    padding-left: 10px;
   }
 }
 @media (max-width: 800px) {
-  .main_header__search .search__window:focus {
+  .main_header__search {
+    top: -7px;
     width: 170px;
   }
-  .main_header__search:hover {
-    width: 170px;
-  }
-  .main_header__search:hover .search__window {
-    width: 170px;
-  }
-  .main_header__search:focus {
-    width: 170px;
-  }
-  .main_header__search:focus .search__window {
-    width: 170px;
+  .main_header__search .search__window {
+    width: 175px;
+    padding-left: 10px;
   }
 }
 @media (max-width: 700px) {
@@ -574,6 +573,15 @@ header {
 @media (max-width: 640px) {
   .services__mail {
     display: none;
+  }
+
+  .main_header__search {
+    top: -7px;
+    width: 95px;
+  }
+  .main_header__search .search__window {
+    width: 100px;
+    padding-left: 10px;
   }
 }
 @media (max-width: 500px) {

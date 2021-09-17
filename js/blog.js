@@ -20,3 +20,21 @@ if (iconMenu) {
     menuBody.classList.toggle("_active");
   });
 }
+
+$(document).ready(function () {
+  const mediaQuery = window.matchMedia("(max-width: 800px)");
+  if (mediaQuery.matches) {
+    $(".related_post__slider").slick({
+      arrows: false,
+      slidesToShow: 1,
+    });
+  }
+
+  $(".related_post__slider").slick({
+    arrows: true,
+    dots: true,
+    slidesToShow: 3,
+    infinite: true,
+    speed: 500,
+  });
+});

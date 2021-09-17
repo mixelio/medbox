@@ -57,6 +57,7 @@
   margin: 0 0 30px;
   padding: 0 0 0 50px;
   position: relative;
+  transition-duration: 500ms;
   &:before {
     content: "01";
     position: absolute;
@@ -87,6 +88,7 @@
     font-size: 16px;
     line-height: 20px;
     color: #333333;
+    transition-duration: 500ms;
     &:hover {
       color: #cc005e;
     }
@@ -118,6 +120,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  transition-duration: 500ms;
 }
 
 .tags_item {
@@ -128,7 +131,7 @@
   padding: 3px 8px;
   margin: 0 5px 18px;
   display: block;
-
+  transition-duration: 500ms;
   &:hover {
     background: #cc005e;
     color: #fff;
@@ -240,5 +243,21 @@
   height: 43px;
   img {
     width: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .main_content__item {
+    margin: 0 15px;
+  }
+}
+
+@media (max-width: 800px) {
+  .main_content__row {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .main_content__general {
+    width: 90%;
   }
 }
