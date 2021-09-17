@@ -161,15 +161,14 @@ body {
 
 .pagination__arrow_back {
   &:before {
-    background: url("../../img/paggin-arrow-back.svg") 50% 50% / contain
-      no-repeat;
+    background: url("../img/paggin-arrow-back.svg") 50% 50% / contain no-repeat;
   }
   &:hover {
     background-color: #fff;
     border: 1px solid #cc005e;
   }
   &:hover:before {
-    background: url("../../img/paggin-arrow-back-hover.svg") 50% 50% / contain
+    background: url("../img/paggin-arrow-back-hover.svg") 50% 50% / contain
       no-repeat;
   }
 }
@@ -199,15 +198,14 @@ body {
 
 .pagination__arrow_next {
   &:before {
-    background: url("../../img/paggin-arrow-next.svg") 50% 50% / contain
-      no-repeat;
+    background: url("../img/paggin-arrow-next.svg") 50% 50% / contain no-repeat;
   }
   &:hover {
     background-color: #fff;
     border: 1px solid #cc005e;
   }
   &:hover:before {
-    background: url("../../img/paggin-arrow-next-hover.svg") 50% 50% / contain
+    background: url("../img/paggin-arrow-next-hover.svg") 50% 50% / contain
       no-repeat;
   }
 }
@@ -367,34 +365,32 @@ body {
 }
 
 .instagram {
-  background: url("../../img/instagram-grey.svg") 50% 50% / contain no-repeat;
+  background: url("../img/instagram-grey.svg") 50% 50% / contain no-repeat;
   &:hover {
-    background: url("../../img/instagram-grey-hover.svg") 50% 50% / contain
+    background: url("../img/instagram-grey-hover.svg") 50% 50% / contain
       no-repeat;
   }
 }
 
 .youtube {
-  background: url("../../img/youtube-grey.svg") 50% 50% / contain no-repeat;
+  background: url("../img/youtube-grey.svg") 50% 50% / contain no-repeat;
   &:hover {
-    background: url("../../img/youtube-grey-hover.svg") 50% 50% / contain
-      no-repeat;
+    background: url("../img/youtube-grey-hover.svg") 50% 50% / contain no-repeat;
   }
 }
 
 .facebook {
-  background: url("../../img/facebook-grey.svg") 50% 50% / contain no-repeat;
+  background: url("../img/facebook-grey.svg") 50% 50% / contain no-repeat;
   &:hover {
-    background: url("../../img/facebook-grey-hover.svg") 50% 50% / contain
+    background: url("../img/facebook-grey-hover.svg") 50% 50% / contain
       no-repeat;
   }
 }
 
 .twitter {
-  background: url("../../img/twitter-grey.svg") 50% 50% / contain no-repeat;
+  background: url("../img/twitter-grey.svg") 50% 50% / contain no-repeat;
   &:hover {
-    background: url("../../img/twitter-grey-hover.svg") 50% 50% / contain
-      no-repeat;
+    background: url("../img/twitter-grey-hover.svg") 50% 50% / contain no-repeat;
   }
 }
 

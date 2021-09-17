@@ -1,0 +1,244 @@
+.main_content__row {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  max-width: 1170px;
+  margin: -100px auto 0;
+}
+
+.main_content__aside {
+  max-width: 320px;
+}
+
+.main_content__item {
+  margin: 0 35px;
+}
+
+.main_content__general {
+  width: 60%;
+}
+
+.latest_articles {
+  padding: 35px 20px 50px;
+  margin: 0 0 55px;
+  background: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.title {
+  padding: 0 0 17px;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 27px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #130947;
+  position: relative;
+  &:before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    width: 40px;
+    background-color: #14b2cc;
+    bottom: 0;
+    left: calc(50% - 20px);
+  }
+}
+
+.latest_articles__titles {
+  margin-bottom: 36px;
+}
+
+.latest_articles__list {
+}
+
+.latest_articles__item {
+  margin: 0 0 30px;
+  padding: 0 0 0 50px;
+  position: relative;
+  &:before {
+    content: "01";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #b8c2c8;
+  }
+  &:nth-child(2):before {
+    content: "02";
+  }
+  &:nth-child(3):before {
+    content: "03";
+  }
+  &:nth-child(4):before {
+    content: "04";
+  }
+  &:nth-child(5):before {
+    content: "05";
+  }
+  a {
+    display: inline-block;
+    margin: 0 0 8px;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+    &:hover {
+      color: #cc005e;
+    }
+  }
+}
+
+.latest_articles__catigories {
+  display: block;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #b8c2c8;
+}
+
+.tags {
+  padding: 35px 20px 50px;
+  margin: 0 0 55px;
+  background: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.tags__title {
+  margin-bottom: 25px;
+}
+
+.tags__row {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tags_item {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #14b2cc;
+  padding: 3px 8px;
+  margin: 0 5px 18px;
+  display: block;
+
+  &:hover {
+    background: #cc005e;
+    color: #fff;
+  }
+}
+
+.follow_us {
+  text-align: center;
+  padding: 35px 20px 50px;
+  margin: 0 0 55px;
+  background: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  span {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+    margin: 0 0 30px;
+  }
+}
+
+.follow_us__titile {
+  margin: 0 0 10px;
+}
+
+.follow_us__row {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+}
+
+.follow_us__item {
+  a {
+    margin: 0 8px;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    transition-duration: 500ms;
+  }
+}
+
+.instagram {
+  background: url("../../img/instagram-grey.svg") 50% 50% / contain no-repeat;
+  &:hover {
+    background: url("../../img/instagram-grey-hover.svg") 50% 50% / contain
+      no-repeat;
+  }
+}
+
+.youtube {
+  background: url("../../img/youtube-grey.svg") 50% 50% / contain no-repeat;
+  &:hover {
+    background: url("../../img/youtube-grey-hover.svg") 50% 50% / contain
+      no-repeat;
+  }
+}
+
+.facebook {
+  background: url("../../img/facebook-grey.svg") 50% 50% / contain no-repeat;
+  &:hover {
+    background: url("../../img/facebook-grey-hover.svg") 50% 50% / contain
+      no-repeat;
+  }
+}
+
+.twitter {
+  background: url("../../img/twitter-grey.svg") 50% 50% / contain no-repeat;
+  &:hover {
+    background: url("../../img/twitter-grey-hover.svg") 50% 50% / contain
+      no-repeat;
+  }
+}
+
+.download {
+  text-align: center;
+  padding: 35px 20px 50px;
+  margin: 0 0 55px;
+  background: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.download__title {
+  margin: 0 0 20px;
+}
+
+.download__row {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.download__appstore {
+  margin: 0 0 10px;
+  display: inline-block;
+  width: 150px;
+  height: 43px;
+  img {
+    width: 100%;
+  }
+}
+
+.download__playmarket {
+  display: inline-block;
+  width: 150px;
+  height: 43px;
+  img {
+    width: 100%;
+  }
+}
