@@ -550,6 +550,79 @@ header {
     width: 170px;
   }
 }
+@media (max-width: 700px) {
+  .main_header__button {
+    padding: 0 40px;
+    font-size: 0;
+  }
+  .main_header__button:before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: calc(50% - 22.5px);
+    left: calc(50% - 22.5px);
+  }
+}
+@media (max-width: 640px) {
+  .services__mail {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .burger__menu ul li:last-child {
+    margin-bottom: 20px;
+  }
+  .burger__menu .burger__menu__search {
+    display: block;
+  }
+  .main_header__search {
+    display: none;
+  }
+
+  .social_link_1_item {
+    margin-right: 10px;
+  }
+
+  .social_link_1_row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .select_lang {
+    margin: 0 15px 0 0;
+  }
+
+  .registration {
+    margin: 0 0 0 10px;
+  }
+
+  .main_header__button {
+    padding: 0 40px;
+    font-size: 0;
+  }
+  .main_header__button:hover:after {
+    width: 50%;
+  }
+}
+@media (max-width: 400px) {
+  .lang_sub {
+    left: 0;
+    top: 22px;
+  }
+  .lang_sub a {
+    font-size: 13px;
+  }
+
+  .social_link_1_item {
+    flex: 0 1 40%;
+    margin-right: 0;
+    margin: 0 0 3px;
+  }
+
+  .registration li {
+    padding: 0 5px;
+  }
+}
 .footer {
   width: 100%;
   background: #171717;
@@ -706,6 +779,34 @@ header {
   margin-bottom: 0;
 }
 
+@media (max-width: 700px) {
+  .footer__row {
+    flex-wrap: wrap;
+  }
+
+  .footer__item {
+    margin: 0 5px 15px;
+  }
+}
+@media (max-width: 600px) {
+  .footer_contact__row {
+    flex-direction: column;
+    padding: 60px 0 40px;
+  }
+  .footer_contact__row .footer_contact__item {
+    margin: 0 0 30px;
+  }
+  .footer_contact__row .footer_contact__item:last-child {
+    margin: 0;
+  }
+}
+@media (max-width: 500px) {
+  .footer__row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
 .try {
   padding: 90px 0 90px 50px;
   background: url("../img/people.webp") 50% 50%/cover no-repeat;
@@ -794,6 +895,18 @@ header {
   background: #cc005e;
 }
 
+@media (max-width: 400px) {
+  .try {
+    text-align: center;
+    padding: 90px 0 90px;
+    margin: 0;
+  }
+
+  .try__appstore {
+    margin-right: 0px;
+    margin: 0 0 20px;
+  }
+}
 /*подключение шрифтов*/
 body {
   font-family: Montserrat;
@@ -1508,18 +1621,6 @@ body {
   }
 }
 @media (max-width: 700px) {
-  .main_header__button {
-    padding: 0 40px;
-    font-size: 0;
-  }
-  .main_header__button:before {
-    content: "";
-    position: absolute;
-    display: inline-block;
-    top: calc(50% - 22.5px);
-    left: calc(50% - 22.5px);
-  }
-
   .main_screen {
     transform: translateY(-18%);
   }
@@ -1547,14 +1648,6 @@ body {
   .function__apps {
     flex-direction: column;
     align-items: center;
-  }
-
-  .footer__row {
-    flex-wrap: wrap;
-  }
-
-  .footer__item {
-    margin: 0 5px 15px;
   }
 }
 @media (max-width: 640px) {
@@ -1597,53 +1690,8 @@ body {
     padding: 0 10px;
     flex: 1 1 100%;
   }
-
-  .footer_contact__row {
-    flex-direction: column;
-    padding: 60px 0 40px;
-  }
-  .footer_contact__row .footer_contact__item {
-    margin: 0 0 30px;
-  }
-  .footer_contact__row .footer_contact__item:last-child {
-    margin: 0;
-  }
 }
 @media (max-width: 500px) {
-  .burger__menu ul li:last-child {
-    margin-bottom: 20px;
-  }
-  .burger__menu .burger__menu__search {
-    display: block;
-  }
-  .main_header__search {
-    display: none;
-  }
-
-  .social_link_1_item {
-    margin-right: 10px;
-  }
-
-  .social_link_1_row {
-    flex-wrap: wrap;
-  }
-
-  .select_lang {
-    margin: 0 15px 0 0;
-  }
-
-  .registration {
-    margin: 0 0 0 10px;
-  }
-
-  .main_header__button {
-    padding: 0 40px;
-    font-size: 0;
-  }
-  .main_header__button:hover:after {
-    width: 50%;
-  }
-
   .main_slider .slick-arrow {
     top: 55%;
   }
@@ -1711,22 +1759,8 @@ body {
   .comment {
     padding: 50px 0;
   }
-
-  .footer__row {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
 }
 @media (max-width: 400px) {
-  .social_link_1_item {
-    margin-right: 5px;
-  }
-
-  .registration li {
-    padding: 0 5px;
-  }
-
   .main_slider .slick-arrow {
     top: 47%;
   }
@@ -1747,13 +1781,6 @@ body {
   .about_app__info .item_box::before {
     top: calc(50% - 175px);
     height: 350px;
-  }
-
-  .try {
-    padding: 90px 0 90px;
-    background: url("../img/people.webp") 50% 50%/cover no-repeat;
-    max-width: 1100px;
-    margin: 0 auto 62px;
   }
 
   .about_app__info .item_box::before {
@@ -1782,5 +1809,10 @@ body {
 
   .comment_slider__row1 img {
     width: 40%;
+  }
+}
+@media (max-width: 350px) {
+  .menu__icon {
+    left: 15px;
   }
 }

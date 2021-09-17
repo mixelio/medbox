@@ -775,17 +775,6 @@ body {
 }
 
 @media (max-width: 700px) {
-  .main_header__button {
-    padding: 0 40px;
-    font-size: 0;
-    &:before {
-      content: "";
-      position: absolute;
-      display: inline-block;
-      top: calc(50% - 22.5px);
-      left: calc(50% - 22.5px);
-    }
-  }
   .main_screen {
     transform: translateY(-18%);
   }
@@ -810,12 +799,6 @@ body {
   .function__apps {
     flex-direction: column;
     align-items: center;
-  }
-  .footer__row {
-    flex-wrap: wrap;
-  }
-  .footer__item {
-    margin: 0 5px 15px;
   }
 }
 
@@ -852,63 +835,14 @@ body {
     top: -10px;
     left: calc(50% - 4px);
   }
-
   .function__item_2 {
     margin: 0 0 20px 0;
     padding: 0 10px;
     flex: 1 1 100%;
   }
-  .footer_contact__row {
-    flex-direction: column;
-    padding: 60px 0 40px;
-    .footer_contact__item {
-      margin: 0 0 30px;
-      &:last-child {
-        margin: 0;
-      }
-    }
-  }
 }
 
 @media (max-width: 500px) {
-  .burger__menu {
-    ul {
-      li {
-        &:last-child {
-          margin-bottom: 20px;
-        }
-      }
-    }
-    .burger__menu__search {
-      display: block;
-    }
-    .burger__menu__sersh_submit {
-    }
-  }
-  .main_header__search {
-    display: none;
-  }
-  .social_link_1_item {
-    margin-right: 10px;
-  }
-  .social_link_1_row {
-    flex-wrap: wrap;
-  }
-
-  .select_lang {
-    margin: 0 15px 0 0;
-  }
-  .registration {
-    margin: 0 0 0 10px;
-  }
-
-  .main_header__button {
-    padding: 0 40px;
-    font-size: 0;
-    &:hover:after {
-      width: 50%;
-    }
-  }
   .main_slider .slick-arrow {
     top: 55%;
   }
@@ -975,20 +909,9 @@ body {
   .comment {
     padding: 50px 0;
   }
-  .footer__row {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
 }
 
 @media (max-width: 400px) {
-  .social_link_1_item {
-    margin-right: 5px;
-  }
-  .registration li {
-    padding: 0 5px;
-  }
   .main_slider .slick-arrow {
     top: 47%;
   }
@@ -1009,12 +932,7 @@ body {
     top: calc(50% - 175px);
     height: 350px;
   }
-  .try {
-    padding: 90px 0 90px;
-    background: url("../img/people.webp") 50% 50% / cover no-repeat;
-    max-width: 1100px;
-    margin: 0 auto 62px;
-  }
+
   .about_app__info .item_box::before {
     top: calc(50% - 175px);
     height: 350px;
@@ -1036,5 +954,11 @@ body {
   }
   .comment_slider__row1 img {
     width: 40%;
+  }
+}
+
+@media (max-width: 350px) {
+  .menu__icon {
+    left: 15px;
   }
 }

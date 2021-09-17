@@ -85,3 +85,16 @@
     background: #cc005e;
   }
 }
+
+@media (max-width: 400px) {
+  .try {
+    text-align: center;
+    padding: 90px 0 90px;
+
+    margin: 0;
+  }
+  .try__appstore {
+    margin-right: 0px;
+    margin: 0 0 20px;
+  }
+}
