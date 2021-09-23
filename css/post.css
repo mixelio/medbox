@@ -556,6 +556,13 @@ header {
     width: 175px;
     padding-left: 10px;
   }
+  .main_header__search .search__window:focus {
+    width: 180px;
+    padding-left: 10px;
+  }
+  .main_header__search:hover {
+    width: 175px;
+  }
 }
 @media (max-width: 700px) {
   .main_header__button {
@@ -579,8 +586,20 @@ header {
     top: -7px;
     width: 95px;
   }
+  .main_header__search:hover {
+    width: 100px;
+  }
   .main_header__search .search__window {
     width: 100px;
+    padding-left: 10px;
+  }
+  .main_header__search .search__window:focus {
+    width: 110px;
+    padding-left: 10px;
+  }
+
+  .main_header__search:hover .search__window {
+    width: 110px;
     padding-left: 10px;
   }
 }

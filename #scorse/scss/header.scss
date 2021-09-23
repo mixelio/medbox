@@ -460,6 +460,13 @@ header {
     .search__window {
       width: 175px;
       padding-left: 10px;
+      &:focus {
+        width: 180px;
+        padding-left: 10px;
+      }
+    }
+    &:hover {
+      width: 175px;
     }
   }
 }
@@ -485,11 +492,21 @@ header {
   .main_header__search {
     top: -7px;
     width: 95px;
-
+    &:hover {
+      width: 100px;
+    }
     .search__window {
       width: 100px;
       padding-left: 10px;
+      &:focus {
+        width: 110px;
+        padding-left: 10px;
+      }
     }
+  }
+  .main_header__search:hover .search__window {
+    width: 110px;
+    padding-left: 10px;
   }
 }
 
